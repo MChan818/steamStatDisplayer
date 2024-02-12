@@ -1,4 +1,4 @@
-# Steam games stats displayer
+# [ON GOING] Steam games stats displayer
 
 ## Dribble designs:
 - https://dribbble.com/shots/20890802-Gaming-Dashboard
