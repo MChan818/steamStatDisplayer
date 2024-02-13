@@ -1,11 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import useGetFetch from "./hooks/fetch/useGetFetch";
+import Home from "./pages/Home";
+import CsgoPage from "./pages/CsgoPage";
 const App = () => {
-	const { data } = useGetFetch({
-		url: import.meta.env.VITE_ENDPOINT_GETUSERSTATS + import.meta.env.VITE_EXAMPLE_USER,
-	});
-	
-	return data ? <>{JSON.stringify(data)}</> : null;
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/csgo/:userid" element={<CsgoPage />} />
+			</Routes>
+		</BrowserRouter>
+	);
 };
 
 export default App;

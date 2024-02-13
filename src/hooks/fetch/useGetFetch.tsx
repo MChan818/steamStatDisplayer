@@ -25,6 +25,7 @@ const useGetFetch = ({ url }: TApiProps): TApiResponse => {
 					},
 				})
 				.then((res: AxiosResponse) => {
+					console.log(res.data)
 					setData(res.data);
 				})
 				.catch((err: AxiosError) => {
