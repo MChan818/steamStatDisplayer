@@ -1,3 +1,8 @@
+export type TGameTab = {
+	title: string;
+	url: string;
+};
+
 export const testObject = {
 	playerstats: {
 		steamID: "76561198318565589",
@@ -848,3 +853,18 @@ export const testObject = {
 		],
 	},
 };
+
+export const testGames:TGameTab[] = [
+	{
+		title: "CS:GO",
+		url: "csgo",
+	},
+	{
+		title: "Team Fortress 2",
+		url: "tf2",
+	},
+	{
+		title: "PUBG",
+		url: "pubg",
+	},
+];

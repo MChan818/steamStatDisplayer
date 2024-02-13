@@ -10,7 +10,7 @@ const CsgoPage = () => {
 	// });
 
 	return testObject ? (
-		<div className="w-screen h-screen bg-[#111] p-8">
+		<div className="w-screen h-screen bg-default p-10">
 			<GameTab />
 		</div>
 	) : null;
